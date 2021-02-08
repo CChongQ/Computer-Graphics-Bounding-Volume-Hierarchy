@@ -1,5 +1,10 @@
 # Computer Graphics – Bounding Volume Hierarchy 
 
+## Background 
+**IMPORTANT:** (07/02/2021) There is currently an issue with calling cmake on this repo because of `LibiglDownloadExternal.cmake`.  After recursively cloning this repo, please replace `./libigl/cmake/LibiglDownloadExternal.cmake` with https://raw.githubusercontent.com/libigl/libigl/master/cmake/LibiglDownloadExternal.cmake.
+
+Because students have already used this fix after the assignment has been released, we will update this repo after the deadline.
+
 > **To get started:** Clone this repository and all its [submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules) dependencies using:
 > 
 >     git clone --recursive https://github.com/idaho777/computer-graphics-bounding-volume-hierarchy.git
@@ -20,9 +25,6 @@
 >     sudo apt-get install libxi-dev
 >     sudo apt-get install libxmu-dev
 >     sudo apt-get install libblas-dev
-
-
-## Background 
 
 ### Read Section 12.3 of _Fundamentals of Computer Graphics (4th Edition)_.
 
