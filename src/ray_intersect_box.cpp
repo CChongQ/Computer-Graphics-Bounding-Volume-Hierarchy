@@ -54,13 +54,14 @@ bool ray_intersect_box(
     t_zmax = (z_min-z_e)/z_d;
   }
 
-  double min = std::max( std::max(t_xmin,t_ymin) ,t_zmin);
-  double max = std::min( std::min(t_xmax,t_ymax) ,t_zmax);
-  if ( max < min ) 
+  double min_temp = std::max( std::max(t_xmin,t_ymin) ,t_zmin);
+  double max_temp = std::min( std::min(t_xmax,t_ymax) ,t_zmax);
+  if (max_temp < min_temp)
     return false;
-  if (max > max_t || min < min_t)
+  if (max_temp > max_t && min_temp < min_t)
     return false;
 
   return true;
+
   ////////////////////////////////////////////////////////////////////////////
 }
