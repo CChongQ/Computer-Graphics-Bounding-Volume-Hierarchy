@@ -78,11 +78,7 @@ AABBTree::AABBTree(
             this->right = std::make_shared<AABBTree>(right_list, a_depth + 1);
         }
         
-          
-
     }
-
-
 
     ////////////////////////////////////////////////////////////////////////////
 }
